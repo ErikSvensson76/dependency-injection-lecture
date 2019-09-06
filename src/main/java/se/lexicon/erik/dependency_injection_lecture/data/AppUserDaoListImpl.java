@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import se.lexicon.erik.dependency_injection_lecture.model.AppUser;
 
-@Component
+
 public class AppUserDaoListImpl implements AppUserDao {
 	
 	private List<AppUser> appUsers = new ArrayList<>();
