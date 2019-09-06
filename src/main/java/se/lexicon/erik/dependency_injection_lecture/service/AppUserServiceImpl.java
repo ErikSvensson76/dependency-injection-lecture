@@ -3,13 +3,17 @@ package se.lexicon.erik.dependency_injection_lecture.service;
 import java.time.LocalDate;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import se.lexicon.erik.dependency_injection_lecture.data.AppUserDao;
 import se.lexicon.erik.dependency_injection_lecture.model.AppUser;
 
+@Component
 public class AppUserServiceImpl implements AppUserService {
 	
 	private AppUserDao appUserDao;
 
+	@Autowired
 	public AppUserServiceImpl(AppUserDao appUserDao) {
 		this.appUserDao = appUserDao;
 	}
