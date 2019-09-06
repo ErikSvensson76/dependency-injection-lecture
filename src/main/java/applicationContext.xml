@@ -8,6 +8,11 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    <bean id="AppUserDaoListImpl" class="se.lexicon.erik.dependency_injection_lecture.data.AppUserDaoListImpl" />
+    
+    <bean id="AppUserServiceImpl" class="se.lexicon.erik.dependency_injection_lecture.service.AppUserServiceImpl">
+    	<property name="appUserDao" ref="AppUserDaoListImpl"/>
+    </bean>
     
 </beans>
 

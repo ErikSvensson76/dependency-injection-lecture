@@ -10,7 +10,7 @@ public class AppUserServiceImpl implements AppUserService {
 	
 	private AppUserDao appUserDao;
 
-	public AppUserServiceImpl(AppUserDao appUserDao) {
+	public void setAppUserDao(AppUserDao appUserDao) {
 		this.appUserDao = appUserDao;
 	}
 	
